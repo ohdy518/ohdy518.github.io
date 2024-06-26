@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"/>
+
 <div class="flex min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-center justify-center">
     <div id="full-screen" class="min-w-[1080px] h-full mt-[140px] flex flex-col items-start">
         <h1 id="title" class="text-[96px] font-bold ml-[40px] w-fit">
