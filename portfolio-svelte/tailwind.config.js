@@ -6,6 +6,12 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Noto Serif', 'sans-serif'],
+      },
+      spacing: {
+        "c-small": "20px",
+        "c-medium": "40px",
+        "c-semilarge": "60px",
+        "c-large": "80px",
       }
     },
   },
