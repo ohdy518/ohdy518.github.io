@@ -1,7 +1,47 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"/>
 
-<div class="flex min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-center justify-center">
-    <div id="full-screen" class="min-w-[1080px] h-full mt-[140px] flex flex-col items-start self-start">
+<script lang="ts">
+    import "./style.css"
+
+    import { browser } from '$app/environment';
+
+    function loadAboutPage(){
+        let elementsToHide = document.querySelectorAll(".hide-me")!
+        elementsToHide.forEach(element => {
+            element.classList.add('invisible');
+        })
+        console.log(elementsToHide)
+
+        window.scrollTo(0, 0);
+        history.pushState(null, "", "/");
+        window.location.href = "/about"
+    }
+
+    function IOHandler(es: IntersectionObserverEntry[]) {
+        es.forEach(e => {
+            if (e.isIntersecting) {
+                loadAboutPage()
+            }
+        })
+
+    }
+
+    if (browser) {
+        let observer = new IntersectionObserver((e) => {IOHandler(e)})
+
+        let detectionTarget = document.getElementById("detection-target")!;
+
+        observer.observe(detectionTarget)
+
+    }
+
+
+
+
+</script>
+
+<div id="container" class="flex flex-col min-h-[200vh] max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
+    <div id="full-screen" class="min-w-[1080px] h-full mt-[140px] ml-[180px] flex flex-col items-start self-start fadeInOnLoad hide-me">
         <h1 id="title" class="text-[72px] font-bold ml-c-medium w-fit inter-title">
             Hello world!
         </h1>
@@ -42,5 +82,10 @@
         </span>
 
     </div>
+
+    <div id="about-loader" class="w-full h-screen flex flex-col justify-end items-end">
+        <div id="detection-target" class="pt-c-small invisible ">Detection target</div>
+    </div>
+
 </div>
 
