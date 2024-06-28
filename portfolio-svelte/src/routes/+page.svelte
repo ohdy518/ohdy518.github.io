@@ -2,42 +2,7 @@
 
 <script lang="ts">
     import "./style.css"
-
-    import { browser } from '$app/environment';
-
-    function loadAboutPage(){
-        let elementsToHide = document.querySelectorAll(".hide-me")!
-        elementsToHide.forEach(element => {
-            element.classList.add('invisible');
-        })
-        console.log(elementsToHide)
-
-        window.scrollTo(0, 0);
-        history.pushState(null, "", "/");
-        window.location.href = "/about"
-    }
-
-    function IOHandler(es: IntersectionObserverEntry[]) {
-        es.forEach(e => {
-            if (e.isIntersecting) {
-                loadAboutPage()
-            }
-        })
-
-    }
-
-    if (browser) {
-        let observer = new IntersectionObserver((e) => {IOHandler(e)})
-
-        let detectionTarget = document.getElementById("detection-target")!;
-
-        observer.observe(detectionTarget)
-
-    }
-
-
-
-
+    import "./index.ts"
 </script>
 
 <div id="container" class="flex flex-col min-h-[200vh] max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
@@ -84,7 +49,7 @@
     </div>
 
     <div id="about-loader" class="w-full h-screen flex flex-col justify-end items-end">
-        <div id="detection-target" class="pt-c-small invisible ">Detection target</div>
+        <div id="DISABLED-detection-target" class="pt-c-small invisible ">Detection target</div>
     </div>
 
 </div>
