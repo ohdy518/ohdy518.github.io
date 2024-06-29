@@ -5,7 +5,9 @@
     import "./animations.css"
     import {projectsText, experiencesText, emailmeText, onHoverEnter, onHoverExit} from "./change-text-on-hover.ts";
 
-    "./change-text-on-hover.ts"
+    import { initializeScrollObserver, scrollAndLinkTo } from "../scroll-to-redirect.ts";
+
+    initializeScrollObserver()
 </script>
 
 <div id="container" class="flex flex-col min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
@@ -23,39 +25,46 @@
             <br />
             As a result, I make a lot of things, albeit most of them is useless. <br />
             Here are
-            <a id="hover-target" class="text-sky-400 force-inline-block w-[480px]" href="/projects"
+            <button id="hover-target" class="text-left text-sky-400 force-inline-block w-[480px]"
                on:mouseover={() => {onHoverEnter("projects")}}
                on:mouseout={() => onHoverExit("projects")}
                on:focus={() => onHoverEnter("projects")}
-               on:blur={() => onHoverExit("projects")}>
+               on:blur={() => onHoverExit("projects")}
+               on:click={() => {scrollAndLinkTo("/projects")}}
+            >
                 {$projectsText}
-            </a>
+            </button>
             <br />
             <br />
             I didn't live long, but I've learned lots of things <br /> over my years of exploration. <br />
 
             <span id="jbm-sveltekit" class="jbm-username hover:text-[#ff3e00]" >SvelteKit</span> and <span id="jbm-typescript" class="jbm-username hover:text-[#3078c6]">TypeScript</span> is one of them, and
-            <a id="hover-target" class="text-sky-400 force-inline-block w-[360px]" href="experiences"
+            <button id="hover-target" class="text-left text-sky-400 force-inline-block w-[360px]"
                on:mouseover={() => {onHoverEnter("experiences")}}
                on:mouseout={() => onHoverExit("experiences")}
                on:focus={() => onHoverEnter("experiences")}
-               on:blur={() => onHoverExit("experiences")}>
-            {$experiencesText}</a>
+               on:blur={() => onHoverExit("experiences")}
+               on:click={() => {scrollAndLinkTo("/experiences")}}>
+            {$experiencesText}</button>
             <br />
             <br /> <br />
             Want to learn more about me <br />
             or recommend me a new thing to learn? <br />
-            <a id="hover-target" class="text-sky-400 force-inline-block w-[600px]" href="/emailme"
+            <button id="hover-target" class="text-left text-sky-400 force-inline-block w-[600px]"
                on:mouseover={() => {onHoverEnter("emailme")}}
                on:mouseout={() => onHoverExit("emailme")}
                on:focus={() => onHoverEnter("emailme")}
-               on:blur={() => onHoverExit("emailme")}>
-            {$emailmeText}</a>
+               on:blur={() => onHoverExit("emailme")}
+               on:click={() => {scrollAndLinkTo("/emailme")}}>
+            {$emailmeText}</button>
         </span>
 
 
     </div>
-    <div class="hide-me-by-default h-0"></div>
+
+    <div id="about-loader" class="hide-me-by-default w-full h-0 justify-end flex flex-col items-end overflow-hidden">
+        <div id="detection-target" class="pt-c-small overflow-hidden w-1"></div>
+    </div>
 
 
 </div>
