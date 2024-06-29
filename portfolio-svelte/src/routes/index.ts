@@ -33,7 +33,6 @@ function loadAboutPage(){
 }
 
 function IOHandler(es: IntersectionObserverEntry[]) {
-    console.log("seen")
     es.forEach(e => {
         if (e.isIntersecting && enabled) {
             loadAboutPage()
@@ -47,11 +46,10 @@ if (browser) {
 
     let detectionTarget = document.getElementById("detection-target");
 
-    if (detectionTarget == null){
-        console.log("detectionTarget is null")
+    if (detectionTarget == null) {
+        console.error("detectionTarget is null")
     }
     else {
-        console.log(detectionTarget)
         observer.observe(detectionTarget)
     }
 
