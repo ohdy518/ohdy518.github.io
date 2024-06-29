@@ -3,7 +3,8 @@
 <script lang="ts">
     import "./style.css"
     import "./index.ts"
-    import { linkToAboutPage } from "./index.ts";
+    import { initializeScrollObserver, scrollAndLinkTo } from "./scroll-to-redirect.ts";
+    initializeScrollObserver();
 </script>
 
 <div id="container" class="flex flex-col min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
@@ -46,7 +47,7 @@
         <span id="see-more" class="mt-c-small text-[48px] font-normal ml-c-medium w-fit">
             If you'd like to learn more, <br />please visit the
 <!--            <a href="/about" class="text-sky-400">-> About Me</a>-->
-            <button class="text-sky-400" on:click={linkToAboutPage}>-> About Me</button>
+            <button class="text-sky-400" on:click={() => {scrollAndLinkTo("/about")}}>-> About Me</button>
             page.
         </span>
 
