@@ -8,7 +8,7 @@
     "./change-text-on-hover.ts"
 </script>
 
-<div id="container" class="flex flex-col min-h-[200vh] max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
+<div id="container" class="flex flex-col min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
     <div id="full-screen" class="min-w-[1080px] h-full mt-[100px] ml-[140px] flex flex-col items-start self-start fadeInOnLoad hide-me">
         <h1 id="title" class="text-[72px] font-bold ml-c-medium w-fit inter-title">
             About me
@@ -34,7 +34,7 @@
             <br />
             I didn't live long, but I've learned lots of things <br /> over my years of exploration. <br />
 
-            <span id="jbm-sveltekit" class="jbm-username">SvelteKit</span> and <span id="jbm-typescript" class="jbm-username">TypeScript</span> is one of them, and
+            <span id="jbm-sveltekit" class="jbm-username hover:text-[#ff3e00]" >SvelteKit</span> and <span id="jbm-typescript" class="jbm-username hover:text-[#3078c6]">TypeScript</span> is one of them, and
             <a id="hover-target" class="text-sky-400 force-inline-block w-[360px]" href="experiences"
                on:mouseover={() => {onHoverEnter("experiences")}}
                on:mouseout={() => onHoverExit("experiences")}
@@ -55,6 +55,7 @@
 
 
     </div>
+    <div class="hide-me-by-default h-0"></div>
 
 
 </div>

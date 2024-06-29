@@ -13,11 +13,8 @@
     animation: 0.5s ease-out 0s 1 fadeIn
 }
 
-.invisible {
-    visibility: hidden;
-}
 
-.hide-me {
+.hide-me-by-default {
 
 }
 

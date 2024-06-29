@@ -3,9 +3,10 @@
 <script lang="ts">
     import "./style.css"
     import "./index.ts"
+    import { linkToAboutPage } from "./index.ts";
 </script>
 
-<div id="container" class="flex flex-col min-h-[200vh] max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
+<div id="container" class="flex flex-col min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
     <div id="full-screen" class="min-w-[1080px] h-full mt-[140px] ml-[180px] flex flex-col items-start self-start fadeInOnLoad hide-me">
         <h1 id="title" class="text-[72px] font-bold ml-c-medium w-fit inter-title">
             Hello world!
@@ -43,13 +44,16 @@
         <div id="separator" class="pt-c-large w-fit" />
 
         <span id="see-more" class="mt-c-small text-[48px] font-normal ml-c-medium w-fit">
-            If you'd like to learn more, <br />please visit the <a href="/about" class="text-sky-400">-> About Me</a> page.
+            If you'd like to learn more, <br />please visit the
+<!--            <a href="/about" class="text-sky-400">-> About Me</a>-->
+            <button class="text-sky-400" on:click={linkToAboutPage}>-> About Me</button>
+            page.
         </span>
 
     </div>
 
-    <div id="about-loader" class="w-full h-screen flex flex-col justify-end items-end">
-        <div id="DISABLED-detection-target" class="pt-c-small invisible ">Detection target</div>
+    <div id="about-loader" class="hide-me-by-default w-full h-0 justify-end flex flex-col items-end overflow-hidden">
+        <div id="detection-target" class="pt-c-small overflow-hidden w-1"></div>
     </div>
 
 </div>

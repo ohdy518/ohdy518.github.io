@@ -1,5 +1,4 @@
 import { writable } from "svelte/store"
-import { browser } from "$app/environment"
 
 let projHovering = false
 let projectsTextTemplate = "some things I've made."
@@ -16,11 +15,6 @@ let emailmeTextTemplate = "I'd love to read an email from you. "
 let emailmeTextOnHover = "-> Email Me"
 export let emailmeText = writable<string>(emailmeTextTemplate);
 
-let elements: NodeListOf<any>;
-
-if (browser) {
-    elements = document.querySelectorAll("#hover-target")!
-}
 
 export function onHoverEnter(elementName: string) {
     switch (elementName) {
@@ -61,13 +55,11 @@ export function onHoverExit(elementName: string) {
 function updateTexts(elementName: string) {
     switch (elementName) {
         case "projects":
-            fadeThisOut(0)
             if (projHovering) {
                 projectsText.set(projectsTextOnHover)
             } else {
                 projectsText.set(projectsTextTemplate)
             }
-            fadeThisIn(1)
             break
 
         case "experiences":
@@ -86,16 +78,4 @@ function updateTexts(elementName: string) {
             }
             break
     }
-}
-
-function fadeThisIn(elementIndex: number) {
-    elements[elementIndex].classList.remove("fade-it-out")
-    elements[elementIndex].classList.add("fade-it-in")
-    // console.log(elements[elementIndex])
-}
-
-function fadeThisOut(elementIndex: number) {
-    elements[elementIndex].classList.remove("fade-it-in")
-    elements[elementIndex].classList.add("fade-it-out")
-    // console.log(elements[elementIndex])
 }
