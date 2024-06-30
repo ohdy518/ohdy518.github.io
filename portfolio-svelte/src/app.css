@@ -16,6 +16,11 @@
     font-variation-settings: "slnt" 0;
 }
 
+.inter {
+    font-family: "Inter", sans-serif;
+
+}
+
 .jbm-username {
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
