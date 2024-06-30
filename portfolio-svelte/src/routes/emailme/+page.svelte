@@ -36,7 +36,7 @@
         </button>
         <br />
         <div id="reveal-info"
-             class="jbm-username ml-c-medium text-[24px] bg-neutral-950 bg-opacity-50 px-4 py-4 rounded-lg border-2 border-slate-50 w-[37.5vw]
+             class="jbm-username ml-c-medium text-[24px] bg-neutral-950 bg-opacity-50 px-4 py-4 rounded-lg border-2 border-slate-50 w-[800px]
              transition-all ease-in-out delay-75 {$hiddenCSS}">
             Email: ohdy518@gmail.com <br /> <br />
             Subject: [PORTFOLIO] <i>Your subject here</i> <br />
