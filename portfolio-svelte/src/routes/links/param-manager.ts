@@ -1,8 +1,7 @@
 import { browser } from "$app/environment";
-import { writable } from "svelte/store";
 
 // Grab the key from URL params.
-let key: string = ""
+// let key: string = ""
 
 if (browser) {
 
@@ -10,8 +9,8 @@ if (browser) {
     const isReady = urlParams.has('to');
 
     if (isReady) {
-        key = urlParams.get("to")!.toString()
-        getURLFromKey().then(r => {redirectTo(r)})
+        let key = urlParams.get("to")!.toString()
+        getURLFromKey(key).then(r => {redirectTo(r)})
     } else {
         console.error("retrieved key is null")
     }
@@ -19,23 +18,34 @@ if (browser) {
 
 // Redirect the user to the URL.
 function redirectTo(url: string) {
-    window.location.href = url
+    if (browser) {
+        window.location.href = url
+    }
 }
 
 // Retrieve key from database.
 
 import { supabase } from "$lib/supabaseClient";
 
-async function getURLFromKey() {
+async function getURLFromKey(request_key: string) {
     const { data } = await supabase
         .from("links")
         .select("*")
-        .eq("key", key)
+        .eq("key", request_key)
         .single();
-
-    return data.url
+    try {
+        return data.url
+    } catch {
+        return "/links/notfound"
+    }
 
     // return {
     //     links: data ?? [],
     // };
+}
+
+// An export function for use in dynamic routes.
+
+export function getURLAndRedirect(key: string) {
+    getURLFromKey(key).then(r => {redirectTo(r)})
 }
