@@ -4,7 +4,7 @@
 </script>
 
 <span>
-    check the console!
+    You are being redirected to the requested webpage.
 </span>
 
 <!--<ul>-->
