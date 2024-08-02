@@ -3,7 +3,7 @@
 <script lang="ts">
     import {browser} from "$app/environment";
 
-    const PersonalInfoText = "CONTACT ME...<br /> <br />" +
+    const PersonalInfoText = "CONTACT ME <br /> <br />" +
         "Email...... ohdy518@gmail.com <br />" +
         "GitHub..... @ohdy518 <br />" +
         "Discord.... @ohdy518 <br />" +
