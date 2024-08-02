@@ -1,54 +1,44 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"/>
 
 <script lang="ts">
-    import "./../style.css"
-    import { revealOrHide, currentColor, hiddenCSS, revealOrHideHandler } from "./local-index.ts"
-    import { initializeScrollObserver } from "../scroll-to-redirect.ts";
+    import {browser} from "$app/environment";
 
-    initializeScrollObserver()
+    const PersonalInfoText = "EMAIL INFO <br />" +
+        "ADDR: ohdy518@gmail.com <br />" +
+        "SUBJ: [PORTFOLIO] (your title here) <br />" +
+        "CONT: (your content here) <br />"
+
+    function revealPersonalInfo() {
+        if (browser) {
+            let infoElem = document.getElementById("info")!;
+            infoElem.innerHTML = PersonalInfoText
+        }
+    }
 </script>
 
-<div id="container" class="flex flex-col min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
-    <div id="full-screen" class="min-w-[1080px] h-full mt-[100px] ml-[140px] flex flex-col items-start self-start fadeInOnLoad hide-me">
-        <h1 id="title" class="text-[72px] font-bold ml-c-medium w-fit inter-title">
-            Email Me
-        </h1>
-
-        <span id="REPLACE-FROM-HERE" class="mt-c-small text-[36px] font-normal ml-c-medium w-fit">
-            If you'd like to email me, you can click <a class="text-sky-400" href="mailto:ohdy518@gmail.com?subject=%5BPORTFOLIO%5D">here.</a>
-
-            <br />
-            <br />
-            <br />
-
-            Alternatively, you can email me manually.
-        </span>
-        <br />
-        <button on:click={revealOrHideHandler}
-                class="transition-all ease-in-out delay-75
-                ml-c-medium text-[24px] rounded-lg border-4
-                py-[6px] px-[12px]
-                border-{$currentColor} duration-75
-                bg-{$currentColor} duration-75 text-neutral-800 hover:outline hover:outline-offset-4 hover:outline-2
-                hover:outline-{$currentColor}
-                duration-75">
-            {$revealOrHide}
-        </button>
-        <br />
-        <div id="reveal-info"
-             class="jbm-username ml-c-medium text-[24px] bg-neutral-950 bg-opacity-50 px-4 py-4 rounded-lg border-2 border-slate-50 w-[1200px]
-             transition-all ease-in-out delay-75 {$hiddenCSS}">
-            Email: ohdy518@gmail.com <br /> <br />
-            Subject: [PORTFOLIO] <i>Your subject here</i> <br />
-            Body: <i>Your body here</i> <br /> <br />
-            Note: Please include [PORTFOLIO] in the front of the subject. <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any emails without might be ignored.
+<div id="container" class="bg-neutral-950 w-[56.25vh] h-full min-h-screen px-[5.625vh]">
+    <div id="navbar" class="w-max h-c-medium mb-c-medium">
+        <!--        TODO: Move to +layout.svelte-->
+    </div>
+    <div id="content" class="mt-c-large">
+        <div id="intro" class="mb-c-medium">
+            <div class="w-full flex">
+                <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="hello-text">Email me</h1>
+            </div>
+            <span class="inter text-lg leading-relaxed">
+                Seems like you've decided to email me. <br />
+                Good news, I know how to read emails.  <br />
+                <br />
+                If you're looking for <span class="jbm">mailto</span> links for sending quick mails,
+                <a class="hover:underline text-sky-400" href="mailto:ohdy518@gmail.com?subject=%5BPORTFOLIO%5D" target="_blank">click&nbsp;here. </a> <br />
+                <br />
+                Alternatively, if you wish to send email manually,
+                <button class="hover:underline text-sky-400" on:click={revealPersonalInfo}>click&nbsp;here.&nbsp;<span class="text-xs jbm bg-neutral-700 px-1 py-0.5 rounded">Reveal&nbsp;info</span></button> <br />
+                <br />
+            </span>
+            <span class="jbm text-lg" id="info">
+                &nbsp;
+            </span>
         </div>
     </div>
-
-    <div id="about-loader" class="hide-me-by-default w-full h-0 justify-end flex flex-col items-end overflow-hidden">
-        <div id="detection-target" class="pt-c-small overflow-hidden w-1"></div>
-    </div>
-
-
 </div>
-
