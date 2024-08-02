@@ -27,7 +27,7 @@
                 <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="hello-text">About me</h1>
             </div>
             <span class="inter text-lg leading-relaxed">
-                I'm <span class="jbm-username bg-neutral-700 px-1 py-0.5 rounded">ohdy518</span>, a student in South Korea. <br/>
+                I'm <span class="jbm-username bg-neutral-700 px-1 py-0.5 rounded">ohdy518</span>, a student in South&nbsp;Korea. <br/>
                 I am a computer enthusiast who loves anything and everything computer. <br />
                 <br />
                 I've been playing with computers since I was nine. <br />
