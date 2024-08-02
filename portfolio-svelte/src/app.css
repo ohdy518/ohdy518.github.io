@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -21,6 +22,10 @@
 
 }
 
+.nt-serif {
+    font-family: "Noto Serif", serif;
+}
+
 .jbm-username {
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
@@ -30,4 +35,9 @@
 
 .force-inline-block {
     display: inline-block;
+}
+
+.breaker {
+    padding-top: 20px;
+    width: 100%;
 }
