@@ -36,6 +36,10 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+body {
+    background-color: rgb(10, 10, 10);
+}
+
 .force-inline-block {
     display: inline-block;
 }
