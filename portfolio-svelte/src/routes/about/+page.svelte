@@ -1,71 +1,53 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"/>
 
 <script lang="ts">
-    import "./../style.css"
-    import "./animations.css"
-    import {projectsText, experiencesText, emailmeText, onHoverEnter, onHoverExit} from "./change-text-on-hover.ts";
+    import {browser} from "$app/environment";
 
-    import { initializeScrollObserver, scrollAndLinkTo } from "../scroll-to-redirect.ts";
+    const PersonalInfoText = "CONTACT ME...<br /> <br />" +
+        "Email...... ohdy518@gmail.com <br />" +
+        "GitHub..... @ohdy518 <br />" +
+        "Discord.... @ohdy518 <br />" +
+        "Instaram... @ohdy.518"
 
-    initializeScrollObserver()
+    function revealPersonalInfo() {
+        if (browser) {
+            let infoElem = document.getElementById("info")!;
+            infoElem.innerHTML = PersonalInfoText
+        }
+    }
 </script>
 
-<div id="container" class="flex flex-col min-h-screen max-w-[75%] min-w-[1440px] bg-neutral-800 items-start justify-between">
-    <div id="full-screen" class="min-w-[1080px] h-full mt-[100px] ml-[140px] flex flex-col items-start self-start fadeInOnLoad hide-me">
-        <h1 id="title" class="text-[72px] font-bold ml-c-medium w-fit inter-title">
-            About me
-        </h1>
-
-        <span id="about-me-text" class="mt-c-small text-[36px] font-normal ml-c-medium w-fit">
-            I am a student living in South Korea. <br />
-            <br />
-            I love anything related to computers, math or science. <br />
-            <br />
-            I try finding new and interesting facts every day. <br />
-            <br />
-            As a result, I make a lot of things, albeit most of them is useless. <br />
-            Here are
-            <button id="hover-target" class="text-left text-sky-400 force-inline-block w-[480px]"
-               on:mouseover={() => {onHoverEnter("projects")}}
-               on:mouseout={() => onHoverExit("projects")}
-               on:focus={() => onHoverEnter("projects")}
-               on:blur={() => onHoverExit("projects")}
-               on:click={() => {scrollAndLinkTo("/projects")}}
-            >
-                {$projectsText}
-            </button>
-            <br />
-            <br />
-            I didn't live long, but I've learned lots of things <br /> over my years of exploration. <br />
-
-            <span id="jbm-sveltekit" class="jbm-username hover:text-[#ff3e00]" >SvelteKit</span> and <span id="jbm-typescript" class="jbm-username hover:text-[#3078c6]">TypeScript</span> is one of them, and
-            <button id="hover-target" class="text-left text-sky-400 force-inline-block w-[360px]"
-               on:mouseover={() => {onHoverEnter("experiences")}}
-               on:mouseout={() => onHoverExit("experiences")}
-               on:focus={() => onHoverEnter("experiences")}
-               on:blur={() => onHoverExit("experiences")}
-               on:click={() => {scrollAndLinkTo("/experiences")}}>
-            {$experiencesText}</button>
-            <br />
-            <br /> <br />
-            Want to learn more about me <br />
-            or recommend me a new thing to learn? <br />
-            <button id="hover-target" class="text-left text-sky-400 force-inline-block w-[600px]"
-               on:mouseover={() => {onHoverEnter("emailme")}}
-               on:mouseout={() => onHoverExit("emailme")}
-               on:focus={() => onHoverEnter("emailme")}
-               on:blur={() => onHoverExit("emailme")}
-               on:click={() => {scrollAndLinkTo("/emailme")}}>
-            {$emailmeText}</button>
-        </span>
-
-
+<div id="container" class="bg-neutral-950 w-[56.25vh] h-screen px-[5.625vh]">
+    <div id="navbar" class="w-max h-c-medium mb-c-medium">
+        <!--        TODO: Move to +layout.svelte-->
     </div>
-
-    <div id="about-loader" class="hide-me-by-default w-full h-0 justify-end flex flex-col items-end overflow-hidden">
-        <div id="detection-target" class="pt-c-small overflow-hidden w-1"></div>
+    <div id="content" class="mt-c-large">
+        <div id="intro" class="mb-c-medium">
+            <div class="w-full flex">
+                <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="hello-text">About me</h1>
+            </div>
+            <span class="inter text-lg leading-relaxed">
+                I'm <span class="jbm-username bg-neutral-700 px-1 py-0.5 rounded">ohdy518</span>, a student in South Korea. <br/>
+                I am a computer enthusiast who loves anything and everything computer. <br />
+                <br />
+                I've been playing with computers since I was nine. <br />
+                My expertise in Scratch soon evolved into important skills in programming. <br />
+                <br />
+                I use and try many programming languages, and
+                <a class="hover:underline text-sky-400" href="/experiences">these&nbsp;are&nbsp;some&nbsp;I&nbsp;do. </a> <br />
+                <br />
+                Starting and developing projects is my cure for boredom. <br />
+                Although many goes to the bin, some gets finished and <a class="hover:underline text-sky-400" href="/projects">is&nbsp;showcased.</a> <br />
+                <br />
+                If you'd like to learn more about me, you can
+                <a href="/emailme" class="hover:underline text-sky-400">email&nbsp;me</a> <br />
+                or
+                <button class="hover:underline text-sky-400" on:click={revealPersonalInfo}>contact&nbsp;me&nbsp;in&nbsp;other&nbsp;ways.&nbsp;<span class="text-xs jbm bg-neutral-700 px-1 py-0.5 rounded">Reveal&nbsp;info</span></button> <br />
+                <br />
+            </span>
+            <span class="jbm text-lg" id="info">
+                &nbsp;
+            </span>
+        </div>
     </div>
-
-
 </div>
-
