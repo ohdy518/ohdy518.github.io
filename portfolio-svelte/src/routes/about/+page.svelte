@@ -40,7 +40,7 @@
                 Although many goes to the bin, some gets finished and <a class="hover:underline text-sky-400" href="/projects">is&nbsp;showcased.</a> <br />
                 <br />
                 If you'd like to learn more about me, you can
-                <a href="/emailme" class="hover:underline text-sky-400">email&nbsp;me</a> <br />
+                <a href="/emailme" class="hover:underline text-sky-400">email&nbsp;me</a>
                 or
                 <button class="hover:underline text-sky-400" on:click={revealPersonalInfo}>contact&nbsp;me&nbsp;in&nbsp;other&nbsp;ways.&nbsp;<span class="text-xs jbm bg-neutral-700 px-1 py-0.5 rounded">Reveal&nbsp;info</span></button> <br />
                 <br />
