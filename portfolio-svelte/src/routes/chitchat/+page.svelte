@@ -45,21 +45,14 @@
                 On the other hand, digital me likes everything to be organized. Everything in folders, organized and cleaned up
                 makes me happy. <br />
                 <br />&mdash;&mdash;&mdash;<br />
-                Nowadays, at least at the time this paragraph is being written (August of 2024), artificial intelligence
-                seems to be taking over the whole internet. Every single corporation &mdash; from computer companies to telecommunication
-                services providers &mdash; seems as if they're halting everything they were doing and implementing artificial intelligence for their products.
-                AI certainly is not a bad thing, and AI technology advances by competition of many companies.
-                However, I believe it has entered the phase of being annoying, rather than being cool or useful. <br />
+                For the past several years, I've been eagerly learning English by myself. I don't go to academies or tutoring,
+                and I enjoy learning English by myself. English is a best language for communication worldwide, especially
+                on the internet in my belief. <br />
                 <br />
-                Everything must hold a valid purpose of existence. In terms of products, its purpose should be focusing
-                on the consumers, not the corporation. For example, the iPad collection from Apple holds the purpose of
-                satisfying the needs of mobile large-touchscreen tablet device, such as in drawing digital arts. <br />
-                <br />
-                Some artificial intelligence products hold no purpose for the customers. For instance, win-predicting
-                AI for sport games have no benefits of having, and might even make the game unexciting. Even if the AI
-                is in the state of the art, purposelessly inserting it into the already good products might make the result
-                unappealing as a whole.
-
+                Learning English is extra fun because the things you learn can be applied anywhere instantly.
+                Everything from the comment in codes to this webpage uses English &mdash; meaning I have aplenty of
+                places to write in. <br />
+                <br />&mdash;&mdash;&mdash;<br />
                 <br /><br /><i>to be continued...</i>
             </span>
         </div>
