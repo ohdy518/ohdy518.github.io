@@ -4,10 +4,10 @@
     import {browser} from "$app/environment";
 
     const PersonalInfoText = "CONTACT ME <br /> <br />" +
-        "Email...... ohdy518@gmail.com <br />" +
-        "GitHub..... @ohdy518 <br />" +
-        "Discord.... @ohdy518 <br />" +
-        "Instaram... @ohdy.518"
+        "Email....... ohdy518@gmail.com <br />" +
+        "GitHub...... @ohdy518 <br />" +
+        "Discord..... @ohdy518 <br />" +
+        "Instagram... @ohdy.518"
 
     function revealPersonalInfo() {
         if (browser) {
