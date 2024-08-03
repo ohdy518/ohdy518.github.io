@@ -20,8 +20,8 @@
 
         </div>
         <hr />
-        <div id="buttons" class="mt-c-small inter text-lg leading-relaxed grid grid-cols-1 gap-2 ">
-            <h3 class="text-3xl font-semibold">Links</h3>
+        <div id="buttons" class="mt-c-medium inter text-lg leading-relaxed grid grid-cols-1 gap-0">
+            <h3 class="text-3xl font-semibold mb-c-small">Links</h3>
             <a class="hover:underline text-sky-400" href="https://github.com/ohdy518">-> GitHub</a>
             <a class="hover:underline text-sky-400" href="/emailme" >-> Email me</a>
         </div>
