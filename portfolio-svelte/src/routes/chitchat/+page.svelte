@@ -41,7 +41,7 @@
                 <br />
                 I like everything to be organized, unlike my desk setup. I make this website too, to show myself in a more neat
                 and organized way. I have some differences in real life and on the internet, one of them being organizing stuff.
-                I, in real life, almost never clean my desk I leave my desk as-is, until it becomes a major health threat.
+                I, in real life, almost never clean my desk. I leave my desk as-is, until it becomes a major health threat.
                 On the other hand, digital me likes everything to be organized. Everything in folders, organized and cleaned up
                 makes me happy. <br />
                 <br />
