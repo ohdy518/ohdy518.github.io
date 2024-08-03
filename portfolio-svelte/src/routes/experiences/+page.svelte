@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter"/>
 
-<script lang="ts">
-    import {browser} from "$app/environment";
+<!--<script lang="ts">-->
+<!--    import {browser} from "$app/environment";-->
 
-    if (browser) {
-        window.location.href = "/underconstruction"
-    }
-</script>
+<!--    if (browser) {-->
+<!--        window.location.href = "/underconstruction"-->
+<!--    }-->
+<!--</script>-->
 
 <div id="container" class="bg-neutral-950 w-[56.25vh] h-full min-h-screen px-[5.625vh]">
     <div id="navbar" class="w-max h-c-medium mb-c-medium">
@@ -17,7 +17,41 @@
                 <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="hello-text">Experiences</h1>
             </div>
             <span class="inter text-lg leading-relaxed">
-<!--                TODO: Add content-->
+                <b>Before we begin, </b> I'd like to share my short story. My experience with computers is actually not that long.
+                I started my journey with HTML; <i>Raw</i> HTML. Afterwards, I get into Python, then I start to explore
+                many other language and tools.
+            </span>
+        </div>
+        <hr />
+        <div id="content-python" class="my-c-medium">
+            <span class="inter text-lg leading-relaxed">
+                <b>Python, since 2019. </b> Python is the language I learned and tried out the most.
+                I am able to utilize Python to build various things, such as file encryptor and emoji image downloader.
+                I find Python to be my go-to language, being able to make anything I imagine happen.
+            </span>
+        </div>
+        <hr />
+        <div id="content-golang" class="my-c-medium">
+            <span class="inter text-lg leading-relaxed">
+                <b>Go, since 2023. </b> Go is the most aesthetic language I've used. My time of using Go is rather short,
+                yet I find it easy to learn and create things I desire using the language. I recreated a Python project
+                in Go, and realized it being blazingly fast. To me, Go is the Jack of all trades &mdash; <i>that's a master of all.</i>
+            </span>
+        </div>
+        <hr />
+        <div id="content-svelte" class="my-c-medium">
+            <span class="inter text-lg leading-relaxed">
+                <b>Svelte, since 2024. </b> Svelte might not necessarily be a programming language; but it's no doubt
+                an awesome web framework. I've tried React, NextJS, and quite a lot of other frameworks, and Svelte was
+                the choice of mine. This very website is made with SvelteKit, and I got no issues because of the framework.
+            </span>
+        </div>
+        <hr />
+        <div id="content-other" class="my-c-medium">
+            <span class="inter text-lg leading-relaxed">
+                <b>Other languages. </b> I always like to try new things, and learning programming languages is no exception.
+                <b>C#, GDScript, C++, etc. </b> are the ones I learned or tried.
+                Although the experience is too little to write as a paragraph, I think it's worth a mention.
             </span>
         </div>
     </div>
