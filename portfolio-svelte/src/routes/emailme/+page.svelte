@@ -5,7 +5,7 @@
 
     const PersonalInfoText = "EMAIL INFO <br />" +
         "ADDR: ohdy518@gmail.com <br />" +
-        "SUBJ: [PORTFOLIO] (your title here) <br />" +
+        "SUBJ: [PORTFOLIO] (your subject here) <br />" +
         "CONT: (your content here) <br />"
 
     function revealPersonalInfo() {
