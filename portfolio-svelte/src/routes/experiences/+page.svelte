@@ -17,9 +17,9 @@
                 <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="hello-text">Experiences</h1>
             </div>
             <span class="inter text-lg leading-relaxed">
-                <b>Before we begin, </b> I'd like to share my short story. My experience with computers is actually not that long.
-                I started my journey with HTML; <i>Raw</i> HTML. Afterwards, I get into Python, then I start to explore
-                many other language and tools.
+                <b>Actually, </b> My experience with computers is not that long.
+                I started my journey with HTML; <i>Raw</i> HTML. Afterwards, I got into Python, then started to explore
+                many other languages and tools.
             </span>
         </div>
         <hr />
@@ -34,16 +34,16 @@
         <div id="content-golang" class="my-c-medium">
             <span class="inter text-lg leading-relaxed">
                 <b>Go, since 2023. </b> Go is the most aesthetic language I've used. My time of using Go is rather short,
-                yet I find it easy to learn and create things I desire using the language. I recreated a Python project
-                in Go, and realized it being blazingly fast. To me, Go is the Jack of all trades &mdash; <i>that's a master of all.</i>
+                yet I find it easy to learn and create things I desire. I once recreated a Python project
+                in Go, and realized it being blazingly fast. To me, Go is the Jack of all trades &mdash; master of <i>all.</i>
             </span>
         </div>
         <hr />
         <div id="content-svelte" class="my-c-medium">
             <span class="inter text-lg leading-relaxed">
                 <b>Svelte, since 2024. </b> Svelte might not necessarily be a programming language; but it's no doubt
-                an awesome web framework. I've tried React, NextJS, and quite a lot of other frameworks, and Svelte was
-                the choice of mine. This very website is made with SvelteKit, and I got no issues because of the framework.
+                an awesome web framework. I've tried React Native, Next.js, and quite a lot of other frameworks, and Svelte is
+                the choice of mine. This very website is made with SvelteKit, and I had no issues building the site.
             </span>
         </div>
         <hr />
@@ -51,7 +51,7 @@
             <span class="inter text-lg leading-relaxed">
                 <b>Other languages. </b> I always like to try new things, and learning programming languages is no exception.
                 <b>C#, GDScript, C++, etc. </b> are the ones I learned or tried.
-                Although the experience is too little to write as a paragraph, I think it's worth a mention.
+                Although the experience is too little to write it as a paragraph, I think it's worth a mention here.
             </span>
         </div>
     </div>
