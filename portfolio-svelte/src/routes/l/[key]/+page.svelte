@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { page } from "\$app/stores";
+    import { page } from "$app/stores";
     import { browser } from "$app/environment";
     // import { getURLAndRedirect } from "./../param-manager.ts"
 
