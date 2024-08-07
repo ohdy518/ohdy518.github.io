@@ -4,3 +4,4 @@ Disallow: /chitchat/
 Disallow: /l/
 Disallow: /links/
 Disallow: /.TEMPLATE/
+Disallow: /hiddenblog/
