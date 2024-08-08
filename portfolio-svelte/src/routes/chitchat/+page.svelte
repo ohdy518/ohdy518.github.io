@@ -24,7 +24,7 @@
             </span>
         </div>
         <hr />
-        <div id="content-python" class="my-c-medium">
+        <div id="content" class="my-c-medium">
             <span class="inter text-lg leading-relaxed">
                 Hi, I made this page to write down my thoughts in a better organized way, to practice English,
                 to let the future me know what I was up to decades ago, and stuff. If you'd like to know me more,
@@ -45,14 +45,17 @@
                 On the other hand, digital me likes everything to be organized. Everything in folders, organized and cleaned up
                 makes me happy. <br />
                 <br />&mdash;&mdash;&mdash;<br />
-                For the past several years, I've been eagerly learning English by myself. I don't go to academies or tutoring,
-                and I enjoy learning English by myself. English is a best language for communication worldwide, especially
-                on the internet in my belief. <br />
+                I like science, but not all. I like <i>some</i> of the science. I, just like any other man, love explosion,
+                fire, shooting and something shattering into smithereens. Playing with the numbers in science is fun.
+                You know what's more fun? Playing with numbers to make bigger explosions. If you happen to be one of my friends,
+                nitroglycerin as my birthday gift might be worth a consideration (I do not endorse criminal activities). <br />
                 <br />
-                Learning English is extra fun because the things you learn can be applied anywhere instantly.
-                Everything from the comment in codes to this webpage uses English &mdash; meaning I have aplenty of
-                places to write in. <br />
-                <br />&mdash;&mdash;&mdash;<br />
+                Explosions aside, I like when I use my software engineering to solve other types of problems. One time,
+                I used Python to calculate 20,000+ digits of &pi; (see <a class="hover:underline text-sky-400" href="https://github.com/ohdy518/pi">here</a>).
+                The other time, I made a Python TUI to practice English vocabularies for my finals. I own an Arduino Uno lying around,
+                and I have no idea where to put it. I'd love to use it <i>somewhere</i>, and I just can't find where it'd be.
+            </span>
+            <span class="inter text-lg leading-relaxed">
                 <br /><br /><i>to be continued...</i>
             </span>
         </div>
