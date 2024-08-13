@@ -6,7 +6,7 @@
     import {browser} from "$app/environment";
 
     const PersonalInfoText = "CONTACT ME <br /> <br />" +
-        "Email....... hello@ohdy.is-a.dev <br />" +
+        "Email....... portfolio@ohdy.is-a.dev <br />" +
         "GitHub...... @ohdy518 <br />" +
         "Discord..... @ohdy518 <br />" +
         "Instagram... @ohdy.518"
