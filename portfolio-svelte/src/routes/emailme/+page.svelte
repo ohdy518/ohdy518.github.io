@@ -4,7 +4,7 @@
     import {browser} from "$app/environment";
 
     const PersonalInfoText = "EMAIL INFO <br />" +
-        "ADDR: ohdy518@gmail.com <br />" +
+        "ADDR: hello@ohdy.is-a.dev <br />" +
         "SUBJ: [PORTFOLIO] (your subject here) <br />" +
         "CONT: (your content here) <br />"
 
@@ -30,7 +30,7 @@
                 Good news, I know how to read emails.  <br />
                 <br />
                 If you're looking for a <span class="jbm">mailto</span> link for sending a quick email,
-                <a class="hover:underline text-sky-400" href="mailto:ohdy518@gmail.com?subject=%5BPORTFOLIO%5D" target="_blank">click&nbsp;here. </a> <br />
+                <a class="hover:underline text-sky-400" href="mailto:hello@ohdy.is-a.dev?subject=%5BPORTFOLIO%5D" target="_blank">click&nbsp;here. </a> <br />
                 <br />
                 Alternatively, if you wish to send one manually,
                 <button class="hover:underline text-sky-400" on:click={revealPersonalInfo}>click&nbsp;here.&nbsp;<span class="text-xs jbm bg-neutral-700 px-1 py-0.5 rounded">Reveal&nbsp;info</span></button> <br />

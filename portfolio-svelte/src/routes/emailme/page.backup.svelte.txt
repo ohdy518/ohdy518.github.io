@@ -15,7 +15,7 @@
         </h1>
 
         <span id="REPLACE-FROM-HERE" class="mt-c-small text-[36px] font-normal ml-c-medium w-fit">
-            If you'd like to email me, you can click <a class="text-sky-400" href="mailto:ohdy518@gmail.com?subject=%5BPORTFOLIO%5D">here.</a>
+            If you'd like to email me, you can click <a class="text-sky-400" href="mailto:hello@ohdy.is-a.dev?subject=%5BPORTFOLIO%5D">here.</a>
 
             <br />
             <br />
@@ -38,7 +38,7 @@
         <div id="reveal-info"
              class="jbm-username ml-c-medium text-[24px] bg-neutral-950 bg-opacity-50 px-4 py-4 rounded-lg border-2 border-slate-50 w-[1200px]
              transition-all ease-in-out delay-75 {$hiddenCSS}">
-            Email: ohdy518@gmail.com <br /> <br />
+            Email: hello@ohdy.is-a.dev <br /> <br />
             Subject: [PORTFOLIO] <i>Your subject here</i> <br />
             Body: <i>Your body here</i> <br /> <br />
             Note: Please include [PORTFOLIO] in the front of the subject. <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Any emails without might be ignored.
