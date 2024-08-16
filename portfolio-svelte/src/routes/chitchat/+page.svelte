@@ -46,9 +46,9 @@
                 makes me happy. <br />
                 <br />&mdash;&mdash;&mdash;<br />
                 I like science, but not all. I like <i>some</i> of the science. I, just like any other man, love explosion,
-                fire, shooting and something shattering into smithereens. Playing with the numbers in science is fun.
+                fire, shooting and something shattering while making a loud noise. Playing with the numbers in science is fun.
                 You know what's more fun? Playing with numbers to make bigger explosions. If you happen to be one of my friends,
-                nitroglycerin as my birthday gift might be worth a consideration (I do not endorse criminal activities). <br />
+                please buy me something that goes <b>boom.</b><br />
                 <br />
                 Explosions aside, I like when I use my software engineering to solve other types of problems. One time,
                 I used Python to calculate 20,000+ digits of &pi; (see <a class="hover:underline text-sky-400" href="https://github.com/ohdy518/pi">here</a>).
