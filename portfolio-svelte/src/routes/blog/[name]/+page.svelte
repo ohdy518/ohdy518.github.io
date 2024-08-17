@@ -57,7 +57,7 @@
     <div id="content" class="mt-c-large">
         <div id="intro" class="mb-c-medium">
             <div class="w-full flex">
-                <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="blog-title">&nbsp;</h1>
+                <h1 class="inter text-5xl mb-c-medium w-fit font-semibold" id="blog-title"> </h1>
             </div>
             <span class="inter text-lg leading-relaxed" id="blog-description">
                 &nbsp;
