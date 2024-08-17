@@ -57,16 +57,16 @@
     <div id="content" class="mt-c-large">
         <div id="intro" class="mb-c-medium">
             <div class="w-full flex">
-                <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="blog-title">Loading...</h1>
+                <h1 class="inter text-5xl mb-c-medium text-nowrap w-fit font-semibold" id="blog-title">&nbsp;</h1>
             </div>
             <span class="inter text-lg leading-relaxed" id="blog-description">
-                The blog you requested for is loading. The blog will render momentarily.
+                &nbsp;
             </span>
         </div>
         <hr />
         <div id="content" class="my-c-medium">
             <span class="inter text-lg leading-relaxed" id="blog-content">
-
+                &nbsp;
             </span>
         </div>
     </div>
