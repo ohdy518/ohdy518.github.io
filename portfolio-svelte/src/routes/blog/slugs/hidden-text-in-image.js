@@ -1,6 +1,6 @@
 export const content = [{
     title: "Hiding Texts in Image",
-    description: "This is my attempt at hiding a text inside an image file. <img src='https://raw.githubusercontent.com/ohdy518/PNGtoText/master/test/thisat1024.png' alt='An image a message is hidden in. '/> <br /> Can you see it?",
+    description: "<b>August 17, 2024</b><br />This is my attempt at hiding a text inside an image file. <img src='https://raw.githubusercontent.com/ohdy518/PNGtoText/master/test/thisat1024.png' alt='An image a message is hidden in. '/> <br /> Can you see it?",
     content: "" +
         "<a href='https://github.com/ohdy518/PNGtoText' class='hover:underline text-sky-400'>-> GitHub here. </a><br /> <br />" +
         "Steganography is a practice of hiding messages inside cover data. I, out of curiosity, made a tool to hide and reveal " +
