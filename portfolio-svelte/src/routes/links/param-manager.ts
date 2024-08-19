@@ -1,3 +1,5 @@
+// This file IS being used.
+
 import { browser } from "$app/environment";
 
 // Grab the key from URL params.
@@ -9,10 +11,14 @@ if (browser) {
     const isReady = urlParams.has('to');
 
     if (isReady) {
+        // NOTE: this section is not used.
+
         let key = urlParams.get("to")!.toString()
-        getURLFromKey(key).then(r => {redirectTo(r)})
+        // let r = getURLFromKey(key)[0] // .then(r => {redirectTo(r)})
+        // console.log(r)
+        // redirectTo(r)
     } else {
-        console.error("retrieved key is null")
+        // console.error("retrieved key is null")
     }
 }
 
@@ -25,9 +31,10 @@ function redirectTo(url: string) {
 
 // Retrieve key from database.
 
+// NOTE: This project no longer uses Supabase.
 import { supabase } from "$lib/supabaseClient";
 
-async function getURLFromKey(request_key: string) {
+async function oldGetURLFromKey(request_key: string) {
     const { data } = await supabase
         .from("links")
         .select("*")
@@ -44,8 +51,22 @@ async function getURLFromKey(request_key: string) {
     // };
 }
 
+async function getURLFromKey(request_key: string) {
+    // console.log(request_key)
+    try {
+        const link = await import(`./list/${request_key}.js`);
+        return link.TO
+    } catch (e) {
+        if (browser) {
+            window.location.href = "/links/notfound"
+        }
+        return null
+    }
+}
+
 // An export function for use in dynamic routes.
 
-export function getURLAndRedirect(key: string) {
-    getURLFromKey(key).then(r => {redirectTo(r)})
+export async function getURLAndRedirect(key: string) {
+    let r = await getURLFromKey(key)// .then(r => {redirectTo(r)})
+    redirectTo(r)
 }

@@ -2,9 +2,10 @@
     import { page } from "\$app/stores";
 
     import { getURLAndRedirect } from "./../param-manager.ts"
+    import {onMount} from "svelte";
 
     const key: string = $page.params.key
-    getURLAndRedirect(key)
+    onMount(async () => {getURLAndRedirect(key)})
 </script>
 
 <span>
