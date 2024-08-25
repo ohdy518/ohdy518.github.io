@@ -48,11 +48,11 @@
                 I like science, but not all. I like <i>some</i> of the science. I, just like any other man, love explosion,
                 fire, shooting and something shattering while making a loud noise. Playing with the numbers in science is fun.
                 You know what's more fun? Playing with numbers to make bigger explosions. If you happen to be one of my friends,
-                please buy me something that goes <b>boom.</b><br />
+                please gift me something that goes <b>boom.</b><br />
                 <br />
-                Explosions aside, I like when I use my software engineering to solve other types of problems. One time,
+                Explosions aside, I like when I use my software engineering skills to solve problems. One time,
                 I used Python to calculate 20,000+ digits of &pi; (see <a class="hover:underline text-sky-400" href="https://github.com/ohdy518/pi">here</a>).
-                The other time, I made a Python TUI to practice English vocabularies for my finals. I own an Arduino Uno lying around,
+                The other time, I made a Python TUI to practice English vocabularies for my finals. I own an Arduino Uno which is lying around,
                 and I have no idea where to put it. I'd love to use it <i>somewhere</i>, and I just can't find where it'd be.
             </span>
             <span class="inter text-lg leading-relaxed">
