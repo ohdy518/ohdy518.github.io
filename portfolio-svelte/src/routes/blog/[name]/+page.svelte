@@ -33,6 +33,14 @@
             title = thisBlog[0].title!
             description = thisBlog[0].description!
             content = thisBlog[0].content!
+                .replaceAll("\\np", "<br /><br />&mdash;&mdash;&mdash;<br />") // new paragraph
+                .replaceAll("\\cb ", "<span class='jbm text-base'>") // open code block
+                .replaceAll("\\!cb", "</span>") // close code block
+                .replaceAll("\\li ", "<a href='") // open link url
+                .replaceAll("\\!liu ", "' class='hover:underline text-sky-400'>") // close link url
+                .replaceAll("\\!li", "</a>") // close <a> tag. example of usage: `\li https://google.com\!liu here\!li`
+                // to use a link inside a code block: \cb link \li https://google.com\!liu here\!li\!cb
+                // good luck to future me.
         }
 
         if (browser) {
