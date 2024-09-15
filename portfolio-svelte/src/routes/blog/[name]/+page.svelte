@@ -33,6 +33,7 @@
             title = thisBlog[0].title!
             description = thisBlog[0].description!
             content = thisBlog[0].content!
+                .replaceAll("\\dn", "<br /><br />") //double new line
                 .replaceAll("\\np", "<br /><br />&mdash;&mdash;&mdash;<br />") // new paragraph
                 .replaceAll("\\cb ", "<span class='jbm text-base'>") // open code block
                 .replaceAll("\\!cb", "</span>") // close code block
