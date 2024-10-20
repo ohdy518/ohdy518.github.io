@@ -8,27 +8,27 @@
 
 
     <url>
-        <loc>https://ohdy.is-a.dev/</loc>
+        <loc>https://ohdy.dev/</loc>
         <lastmod>2024-08-07T02:12:45+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://ohdy.is-a.dev/about</loc>
+        <loc>https://ohdy.dev/about</loc>
         <lastmod>2024-08-07T02:12:45+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://ohdy.is-a.dev/emailme</loc>
+        <loc>https://ohdy.dev/emailme</loc>
         <lastmod>2024-08-07T02:12:45+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://ohdy.is-a.dev/experiences</loc>
+        <loc>https://ohdy.dev/experiences</loc>
         <lastmod>2024-08-07T02:12:45+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>https://ohdy.is-a.dev/projects</loc>
+        <loc>https://ohdy.dev/projects</loc>
         <lastmod>2024-08-07T02:12:45+00:00</lastmod>
         <priority>0.64</priority>
     </url>
@@ -46,27 +46,27 @@
 
 
 <!--    <url>-->
-<!--        <loc>https://ohdy.is-a.dev/</loc>-->
+<!--        <loc>https://ohdy.dev/</loc>-->
 <!--        <lastmod>2024-08-04T09:16:24+00:00</lastmod>-->
 <!--        <priority>1.00</priority>-->
 <!--    </url>-->
 <!--    <url>-->
-<!--        <loc>https://ohdy.is-a.dev/about</loc>-->
+<!--        <loc>https://ohdy.dev/about</loc>-->
 <!--        <lastmod>2024-08-04T09:16:24+00:00</lastmod>-->
 <!--        <priority>0.80</priority>-->
 <!--    </url>-->
 <!--    <url>-->
-<!--        <loc>https://ohdy.is-a.dev/emailme</loc>-->
+<!--        <loc>https://ohdy.dev/emailme</loc>-->
 <!--        <lastmod>2024-08-04T09:16:24+00:00</lastmod>-->
 <!--        <priority>0.64</priority>-->
 <!--    </url>-->
 <!--    <url>-->
-<!--        <loc>https://ohdy.is-a.dev/experiences</loc>-->
+<!--        <loc>https://ohdy.dev/experiences</loc>-->
 <!--        <lastmod>2024-08-04T09:16:24+00:00</lastmod>-->
 <!--        <priority>0.80</priority>-->
 <!--    </url>-->
 <!--    <url>-->
-<!--        <loc>https://ohdy.is-a.dev/projects</loc>-->
+<!--        <loc>https://ohdy.dev/projects</loc>-->
 <!--        <lastmod>2024-08-04T09:16:24+00:00</lastmod>-->
 <!--        <priority>0.80</priority>-->
 <!--    </url>-->

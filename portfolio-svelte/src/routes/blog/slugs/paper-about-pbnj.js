@@ -7,5 +7,5 @@ export const content = [{
         "of making it. I tried to write an 11-paged instructional essay of making one of those. <br /><br />" +
         "The essay and the code was written as part of my school project. <i>I'm not a person who writes an 11-paged essay for no reason.</i>" +
         "<br /><br />" +
-        "Report all bugs and logical errors to <a class='jbm text-base text-sky-400 hover:underline' href='mailto:pbnj-report@ohdy.is-a.dev'>pbnj-report@ohdy.is-a.dev</a>. Happy cooking.",
+        "Report all bugs and logical errors to <a class='jbm text-base text-sky-400 hover:underline' href='mailto:pbnj-report@ohdy.dev'>pbnj-report@ohdy.dev</a>. Happy cooking.",
 }]
