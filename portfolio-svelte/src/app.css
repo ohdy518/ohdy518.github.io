@@ -21,6 +21,11 @@
     font-family: "Inter", sans-serif;
 }
 
+.inter-tnum {
+    font-family: "Inter", sans-serif;
+    font-feature-settings: "tnum" on;
+}
+
 .nt-serif {
     font-family: "Noto Serif", serif;
 }
