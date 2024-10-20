@@ -45,6 +45,6 @@
         <span class="inter-tnum text-5xl">{seconds}<span class="inter text-lg">&nbsp;second{seconds!==1?"s" : ""}</span>&nbsp;</span>
     </div>
     <div class="pt-4 mx-8">
-    <span>remaining until <span class="inter-tnum text-lg">{NEXT_EXAM.replaceAll(" ", ' ')}</span></span>
+    <span class="inter text-lg">remaining until <span class="inter-tnum text-lg" id="target-time-span">{NEXT_EXAM.replaceAll(" ", " ")}</span></span>
     </div>
 </div>
