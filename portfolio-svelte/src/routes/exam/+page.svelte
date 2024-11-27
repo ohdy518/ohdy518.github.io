@@ -1,7 +1,7 @@
 <title>Next exam is in...</title>
 
 <script lang="ts">
-    const NEXT_EXAM = "October 23, 2024 07:50:00"
+    const NEXT_EXAM = "December 9, 2024 07:50:00"
 
     let days = 0
     let hours = 0

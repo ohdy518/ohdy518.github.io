@@ -18,7 +18,7 @@
             return module.content;
         } catch (e) {
             if (browser) {
-                window.location.href = "/blog/notfound"
+                window.location.href = "/essay/notfound"
             }
             return null
         }
@@ -66,7 +66,7 @@
     <div id="content" class="mt-c-large">
         <div id="intro" class="mb-c-small">
             <div class="w-full flex flex-col">
-                <span class="inter text-lg w-fit font-bold text-slate-300">BLOG</span>
+                <span class="inter text-lg w-fit font-bold text-slate-300">ESSAY</span>
                 <h1 class="inter text-5xl mb-c-small w-fit font-semibold" id="blog-title"> </h1>
             </div>
             <span class="inter text-lg leading-relaxed" id="blog-description">
